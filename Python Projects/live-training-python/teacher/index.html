@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Modern Shop - Online Store</title>
+</head>
+<body>
+
+    <!-- Main Navigation Header -->
+    <header>
+        <div class="logo">
+            <a href="#"><h1>ModernShop</h1></a>
+        </div>
+        
+        <!-- Search Bar -->
+        <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Search for products..." required>
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- User Options -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#cart">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner">
+        <h2>Summer Collection Is Here</h2>
+        <p>Discover the latest trends with up to 40% off selected items.</p>
+        <a href="#shop"><button>Shop Now</button></a>
+    </section>
+
+    <main>
+        <!-- Categories Section -->
+        <section id="categories">
+            <h2>Shop by Category</h2>
+            <div>
+                <article>
+                    <h3>Electronics</h3>
+                    <a href="#">Explore</a>
+                </article>
+                <article>
+                    <h3>Fashion</h3>
+                    <a href="#">Explore</a>
+                </article>
+                <article>
+                    <h3>Home & Living</h3>
+                    <a href="#">Explore</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="shop">
+            <h2>Featured Products</h2>
+            
+            <div class="product-grid">
+                
+                <!-- Product Card 1 -->
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250" alt="Wireless Headphones">
+                    <h3>Wireless Noise-Canceling Headphones</h3>
+                    <p class="price">$99.99</p>
+                    <p class="description">High-quality audio with deep bass and long battery life.</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250" alt="Minimalist Watch">
+                    <h3>Classic Analog Watch</h3>
+                    <p class="price">$149.50</p>
+                    <p class="description">Water-resistant stainless steel watch with leather strap.</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250" alt="Smart Fitness Tracker">
+                    <h3>Fitness Tracker Band</h3>
+                    <p class="price">$49.00</p>
+                    <p class="description">Track steps, heart rate, and sleep quality daily.</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+
+                <!-- Product Card 4 -->
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250" alt="Casual Backpack">
+                    <h3>Waterproof Travel Backpack</h3>
+                    <p class="price">$39.99</p>
+                    <p class="description">Durable canvas backpack with dedicated laptop sleeve.</p>
+                    <button type="button">Add to Cart</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Shopping Cart Overview Section -->
+        <section id="cart">
+            <h2>Your Shopping Cart Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wireless Noise-Canceling Headphones</td>
+                        <td>1</td>
+                        <td>$99.99</td>
+                        <td>$99.99</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Subtotal:</strong> $99.99</p>
+            <button type="button">Proceed to Checkout</button>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div>
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">Help Center / FAQ</a></li>
+                <li><a href="#">Shipping & Returns</a></li>
+                <li><a href="#">Order Tracking</a></li>
+            </ul>
+        </div>
+        
+        <div>
+            <h3>Newsletter</h3>
+            <p>Subscribe to receive updates and exclusive deals.</p>
+            <form action="/subscribe" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <div>
+            <p>&copy; 2026 ModernShop. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
