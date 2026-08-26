@@ -459,7 +459,7 @@ class Project(db.Model):
 
 # Initialize Database with Seed Data
 with app.app_context():
-    db.create_all()
+    db.create_all() 
     if not Project.query.first():
         sample_projects = [
             Project(title="AI Neural Core System", category="Machine Learning", status="Active"),
