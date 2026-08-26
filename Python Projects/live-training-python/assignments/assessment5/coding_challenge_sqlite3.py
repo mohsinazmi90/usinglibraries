@@ -11,6 +11,9 @@ import sqlite3
 conn = sqlite3.connect('students.db')
 cursor = conn.cursor()
 
+# Drop the table if it already exists
+cursor.execute("DROP TABLE IF EXISTS PETSHOP")
+
 # Create a table for students
 cursor.execute('''CREATE TABLE IF NOT EXISTS students (
                     student_id INTEGER PRIMARY KEY AUTOINCREMENT,
