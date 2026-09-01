@@ -3,10 +3,6 @@ import json
 import sqlite3
 from typing import List, Optional, Dict, Any
 
-class StudentError(Exception):
-    """Custom exception for student management operations."""
-    pass
-
 class Student:
     def __init__(self, student_id: int, name: str, age: int, grade: str):
         if not isinstance(student_id, int) or student_id <= 0:
