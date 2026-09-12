@@ -10,9 +10,9 @@ class Employee:
     def fullname(self):
         return f"{self.last}, {self.first}"
 
-        
-
 employee1 = Employee("Mohsin", "Azmi", 50000)
 employee2 = Employee("test", "user", 60000)
+
+
 
 print(employee1.fullname())
